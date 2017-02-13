@@ -1,7 +1,7 @@
 .PHONY: all clean deps fmt vet test docker
 
 EXECUTABLE ?= drone-terraform
-IMAGE ?= plugins/$(EXECUTABLE)
+IMAGE ?= msuterski/$(EXECUTABLE)
 COMMIT ?= $(shell git rev-parse --short HEAD)
 
 LDFLAGS = -X "main.buildCommit=$(COMMIT)"
