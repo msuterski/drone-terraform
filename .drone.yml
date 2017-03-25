@@ -13,7 +13,7 @@ pipeline:
     repo: msuterski/drone-terraform
     tag: [ "latest" ]
     when:
-      branch: release/0.4
+      branch: release/0.4.2
       event: push
 
 plugin:
