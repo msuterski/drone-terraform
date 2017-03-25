@@ -10,7 +10,7 @@ pipeline:
       - make test
   docker:
     storage_driver: overlay
-    repo: plugins/drone-terraform
+    repo: msuterski/drone-terraform
     tag: [ "latest" ]
     when:
       branch: release/0.4
@@ -20,6 +20,6 @@ plugin:
   name: Terraform
   desc: Execute Terraform plan and apply
   type: deploy
-  image: plugins/drone-terraform
+  image: msuterski/drone-terraform
   labels:
     - terraform
